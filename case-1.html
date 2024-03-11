@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 1</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .rectangle{
+            width: 50vw;
+            height: 50vh;
+
+            position: absolute;
+        }
+
+        #rec1{
+            background-color: red;
+        }
+
+        #rec2{
+            background-color: green;
+            right: 0;
+        }
+
+        #rec3{
+            background-color: orange;
+            bottom: 0;
+        }
+
+        #rec4{
+            background-color: deeppink;
+            bottom: 0;
+            right: 0;
+        }
+
+        #mid{
+            width: 15vw;
+            height: 15vw;
+
+            background-color: white;
+            position: absolute;
+
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #mid>div{
+            width: 10vw;
+            aspect-ratio: 1/1;
+            background-color: red;
+
+            border-radius: 100%;
+
+            position: absolute;
+
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .rectangle>div{
+            width: 15vw;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+
+            border-radius: 100%;
+            position: absolute;
+
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .rectangle>div>div{
+            width: 5vw;
+            aspect-ratio: 1/1;
+
+            background-color: red;
+
+            position: absolute;
+
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .corner{
+            width: 10vw;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+
+            border-radius: 100%;
+            position: absolute;
+        }
+
+        #corner1{
+            top: -5vw;
+            left: -5vw;
+        }
+
+        #corner2{
+            right: -5vw;
+            top: -5vw;
+        }
+
+        #corner3{
+            bottom: -5vw;
+            left: -5vw;
+        }
+
+        #corner4{
+            right: -5vw;
+            bottom: -5vw;
+        }
+
+        #corner5{
+            top: -5vw;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #corner6{
+            bottom: -5vw;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="rec1" class="rectangle">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="rec2" class="rectangle">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="rec3" class="rectangle">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="rec4" class="rectangle">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="mid">
+        <div></div>
+    </div>
+
+    <div class="corner" id="corner1"></div>
+    <div class="corner" id="corner2"></div>
+    <div class="corner" id="corner3"></div>
+    <div class="corner" id="corner4"></div>
+    <div class="corner" id="corner5"></div>
+    <div class="corner" id="corner6"></div>
+
+</body>
+</html>
